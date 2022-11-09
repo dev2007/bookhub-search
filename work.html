@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">生活万事</a>
+                        <a class="nav-link nav-link-1" href="index.html">生活万事</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-2" href="health.html">健康医药</a>
@@ -43,7 +43,7 @@
                         <a class="nav-link nav-link-3" href="life.html">女性儿童</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-4" href="work.html">工作百宝箱</a>
+                        <a class="nav-link nav-link-4 active" aria-current="page" href="work.html">工作百宝箱</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-5" href="standard.html">国标行标</a>
@@ -54,7 +54,7 @@
     </nav>
 
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll"
-        data-image-src="bg/1.jpg">
+        data-image-src="bg/4.jpg">
         <!-- <form class="d-flex tm-search-form">
             <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
@@ -66,7 +66,7 @@
     <div class="container-fluid tm-container-content tm-mt-60">
         <div class="row mb-4">
             <h2 class="col-6 tm-text-primary">
-                生活万事
+                工作百宝箱
             </h2>
             <!-- <div class="col-6 d-flex justify-content-end align-items-center">
                 <form action="" class="tm-text-primary">
@@ -80,7 +80,7 @@
                     <img :src="query.img" alt="Image" width="500px" height="150px" :style="query.back">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>{{query.title}}</h2>
-                        <a :href="query.link" target="">View more</a>
+                        <a :href="query.link" target="_blank">View more</a>
                     </figcaption>
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -138,9 +138,7 @@
             el: '#app',
             data: {
                 links: [
-                    { link: 'details/zazhi.html', img: 'bg/cnpost.jpg', back: 'background-color:white', title: '报刊图书', description: '报刊图书查询订购' },
-                    { link: 'details/youpiao.html', img: 'bg/cnpost.jpg', back: 'background-color:white', title: '集邮', description: '邮票明信片订购' },
-                    { link: 'details/jinbi.html', img: 'bg/jinbi.jpg', back: 'background-color:white', title: '金银纪念币', description: '金银纪念币订购' },
+                    { link: 'https://www.bejson.com/', img: 'bg/bejson.png', title: 'JSON校验', description: 'JSON校验工具' },
                 ]
             }
         })

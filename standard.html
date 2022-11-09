@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>万事百晓生|为生活寻找一切</title>
+    <title>ISO标准 IEC标准 国家标准 行业标准 ANSI CEN DIN BSI|万事百晓生</title>
+    <meta name="keywords" content="ISO,IEC,标准,国家标准,国标,行业标准,行标,ANSI,CEN,DIN,BSI,SA,NZSO,KATS,查询,标准查询">
     <link rel="icon" href="media/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
@@ -34,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">生活万事</a>
+                        <a class="nav-link nav-link-1" href="index.html">生活万事</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-2" href="health.html">健康医药</a>
@@ -46,7 +47,7 @@
                         <a class="nav-link nav-link-4" href="work.html">工作百宝箱</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-5" href="standard.html">国标行标</a>
+                        <a class="nav-link nav-link-5 active" aria-current="page" href="standard.html">国标行标</a>
                     </li>
                 </ul>
             </div>
@@ -54,7 +55,7 @@
     </nav>
 
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll"
-        data-image-src="bg/1.jpg">
+        data-image-src="bg/5.jpg">
         <!-- <form class="d-flex tm-search-form">
             <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
@@ -80,7 +81,7 @@
                     <img :src="query.img" alt="Image" width="500px" height="150px" :style="query.back">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>{{query.title}}</h2>
-                        <a :href="query.link" target="">View more</a>
+                        <a :href="query.link" target="_blank">View more</a>
                     </figcaption>
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -138,9 +139,18 @@
             el: '#app',
             data: {
                 links: [
-                    { link: 'details/zazhi.html', img: 'bg/cnpost.jpg', back: 'background-color:white', title: '报刊图书', description: '报刊图书查询订购' },
-                    { link: 'details/youpiao.html', img: 'bg/cnpost.jpg', back: 'background-color:white', title: '集邮', description: '邮票明信片订购' },
-                    { link: 'details/jinbi.html', img: 'bg/jinbi.jpg', back: 'background-color:white', title: '金银纪念币', description: '金银纪念币订购' },
+                    { link: 'https://std.samr.gov.cn/', img: 'bg/samr.JPG', title: '中国标准查询', description: '全国标准信息公共服务平台' },
+                    { link: 'https://std.samr.gov.cn/gj/org?op=ISO', img: 'bg/samr.JPG', title: 'ISO 组织机构查询', description: 'ISO 组织机构' },
+                    { link: 'https://std.samr.gov.cn/gj/orgCn', img: 'bg/samr.JPG', title: 'ISO 国内对口单位查询', description: '国际标准化组织国内对口单位' },
+                    { link: 'https://std.samr.gov.cn/gj/std?op=ISO', img: 'bg/samr.JPG', title: 'ISO 标准查询', description: 'ISO 标准' },
+                    { link: 'https://std.samr.gov.cn/gj/org?op=IEC', img: 'bg/samr.JPG', title: 'IEC 组织机构', description: 'IEC 组织机构' },
+                    { link: 'https://std.samr.gov.cn/gj/std?op=IEC', img: 'bg/samr.JPG', title: 'IEC 标准查询', description: 'IEC 标准' },
+                    { link: 'https://www.ansi.org/', img: 'bg/ansi.png', title: '美国标准查询', description: '美国国家标准学会（ANSI）' },
+                    { link: 'https://www.cencenelec.eu/', img: 'bg/cencenelec.svg', title: '欧盟标准查询', description: '欧洲标准化委员会（CEN）' },
+                    { link: 'https://www.din.de/de', img: 'bg/din.png', title: '德国标准查询', description: '德国标准化学会（DIN）' },
+                    { link: 'https://www.bsigroup.com/zh-CN/', img: 'bg/bsi.png', title: '英国标准查询', description: '英国标准协会（BSI）' },
+                    { link: 'https://www.standards.org.au/', img: 'bg/au.png', back: 'background-color:white', title: '澳大利亚&新西兰标准查询', description: '澳大利亚标准学会(SA)&新西兰标准学会(NZSO)' },
+                    { link: 'https://www.kats.go.kr/main.do', img: 'bg/kats.jpg', title: '韩国标准查询', description: '韩国技术标准署(KATS)' }
                 ]
             }
         })
